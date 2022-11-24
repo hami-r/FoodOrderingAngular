@@ -10,6 +10,7 @@ import { BurgerComponent } from './burger/burger.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes = [
   {
@@ -46,7 +47,8 @@ const myRoute:Routes = [
     AllFoodComponent,
     BurgerComponent,
     PizzaComponent,
-    DrinksComponent
+    DrinksComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
