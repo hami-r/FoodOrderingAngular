@@ -9,6 +9,34 @@ import { AllFoodComponent } from './all-food/all-food.component';
 import { BurgerComponent } from './burger/burger.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { DrinksComponent } from './drinks/drinks.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes = [
+  {
+    path:"",
+    component:AllFoodComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"register",
+    component:RegisterComponent
+  },
+  {
+    path:"burger",
+    component:BurgerComponent
+  },
+  {
+    path:"pizza",
+    component:PizzaComponent
+  },
+  {
+    path:"drinks",
+    component:DrinksComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -22,7 +50,8 @@ import { DrinksComponent } from './drinks/drinks.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
