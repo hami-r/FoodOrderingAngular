@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { AllFoodComponent } from './all-food/all-food.component';
 import { BurgerComponent } from './burger/burger.component';
 import { PizzaComponent } from './pizza/pizza.component';
+import { DrinksComponent } from './drinks/drinks.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PizzaComponent } from './pizza/pizza.component';
     RegisterComponent,
     AllFoodComponent,
     BurgerComponent,
-    PizzaComponent
+    PizzaComponent,
+    DrinksComponent
   ],
   imports: [
     BrowserModule,
